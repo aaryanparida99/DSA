@@ -8,17 +8,17 @@ def quickSort(arr,low,high):
         return arr
     
 def partition(arr,low,high):
-        key = arr[low]
-        i = low
-        for j in range(low+1,high):
+        key = arr[high]
+        i = low-1
+        for j in range(low,high):
             if key > arr[j]:
                 i = i+1
                 arr[j] , arr[i] = arr[i] , arr[j]
-        arr[i] , arr[low] = arr[low] , arr[i]
-        return i
+        arr[i+1] , arr[high] = arr[high] , arr[i+1]
+        return i+1
 
 arr = [5,6,2,12,80,1]
 p=0
-q=6
+q=5
 quickSort(arr, p, q)
 print(arr)
