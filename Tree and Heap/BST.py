@@ -31,12 +31,9 @@ def find_max(root):
         find_max(root.right)
 
 def find_min(root):
-    if root is None:
-        return -1
-    elif root.left is None:
-        print(root.val)
-    else:
-        find_min(root.left)
+  while(root.left != None):
+    root = root.left
+  print(root.val)
 
 
 ## Driver Code
