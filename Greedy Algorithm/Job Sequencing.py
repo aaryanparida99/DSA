@@ -18,11 +18,6 @@ def jobScheduling(arr,max_job):
 
 
 
-
-
-
-
-
 #Driver Code
 arr = [
     ['J1', 5 , 50],
